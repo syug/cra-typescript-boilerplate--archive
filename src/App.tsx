@@ -1,9 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
-import styled from 'styled-components';
+import React from "react";
+import logo from "./logo.svg";
+import styled from "styled-components";
 
 const StyledApp = styled.div`
-    text-align: center;
+  text-align: center;
 
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -55,6 +55,6 @@ const App: React.FC = () => {
       </header>
     </StyledApp>
   );
-}
+};
 
 export default App;
