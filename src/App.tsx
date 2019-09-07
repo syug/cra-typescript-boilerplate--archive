@@ -1,10 +1,44 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+
+const StyledApp = styled.div`
+    text-align: center;
+
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .App-link {
+    color: #61dafb;
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+`;
 
 const App: React.FC = () => {
   return (
-    <div className="App">
+    <StyledApp>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,7 +53,7 @@ const App: React.FC = () => {
           Learn React
         </a>
       </header>
-    </div>
+    </StyledApp>
   );
 }
 
