@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import styled from 'styled-components';
+import logo from './logo.svg';
 
 const StyledApp = styled.div`
   text-align: center;
